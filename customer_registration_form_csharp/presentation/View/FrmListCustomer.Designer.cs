@@ -177,7 +177,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmListCustomer";
-            this.Text = "FrmListCustomer";
+            this.Text = "Lista de Clientes";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmListCustomer_Load);
             this.groupBox1.ResumeLayout(false);

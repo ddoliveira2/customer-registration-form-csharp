@@ -45,9 +45,10 @@ namespace presentation.View
             Int64 id = 0;
 
             Int64.TryParse(this._id, out id);
-
+            this.Text = "Cadastrar Cliente";
             if (id > 0)
             {
+                this.Text = "Alterar Cliente";
                 CustomerDto update = _bll.GetOneCustome(this._id);
                 txtCode.Text = this._id;
                 txtName.Text = update.name;
