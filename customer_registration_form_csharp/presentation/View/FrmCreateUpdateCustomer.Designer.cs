@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCode = new System.Windows.Forms.TextBox();
             this.cboStatus = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
@@ -61,14 +61,14 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Status:";
             // 
-            // textBox1
+            // txtCode
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(89, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCode.Location = new System.Drawing.Point(15, 25);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.ReadOnly = true;
+            this.txtCode.Size = new System.Drawing.Size(89, 20);
+            this.txtCode.TabIndex = 1;
+            this.txtCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cboStatus
             // 
@@ -159,6 +159,7 @@
             this.btnSave.TabIndex = 5;
             this.btnSave.Text = "Salvar";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FrmCreateUpdateCustomer
             // 
@@ -173,7 +174,7 @@
             this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.txtRg);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCode);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -192,7 +193,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.ComboBox cboStatus;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtName;
